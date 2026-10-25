@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Jejak Hijau adalah blog edukasi lingkungan tentang pengurangan sampah, hemat energi, air bersih, dan kebiasaan ramah lingkungan.">
+  <meta name="keywords" content="edukasi lingkungan, kampanye lingkungan, pengelolaan sampah, hemat energi, mahasiswa teknik mesin">
+  <meta name="author" content="Nawal Andara Firanti">
+  <meta name="theme-color" content="#176b4d">
+  <title>Jejak Hijau — Edukasi Lingkungan untuk Semua</title>
+  <style>
+    :root{--green:#176b4d;--deep:#103e31;--mint:#e8f5ed;--cream:#fbfaf5;--ink:#1c2c25;--muted:#607168;--line:#dce8df}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.7 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    a{color:var(--green)} .wrap{width:min(1100px,92%);margin:auto}
+    header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 0}
+    .brand{font-weight:850;font-size:1.22rem;color:var(--deep);text-decoration:none;letter-spacing:-.4px}
+    .brand span{color:var(--green)} nav{display:flex;gap:20px;flex-wrap:wrap} nav a{text-decoration:none;font-weight:650;font-size:.94rem}
+    .hero{padding:76px 0 68px;background:linear-gradient(120deg,#e8f5ed,#f7f5e8);overflow:hidden}
+    .hero-grid{display:grid;grid-template-columns:1.3fr .7fr;align-items:center;gap:34px}
+    .eyebrow{display:inline-block;padding:5px 12px;border-radius:99px;background:#d4ebdc;color:var(--deep);font-size:.82rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase}
+    h1{font-size:clamp(2.5rem,6vw,4.6rem);line-height:1.06;letter-spacing:-.055em;margin:18px 0}
+    .hero p{font-size:1.12rem;color:#43594d;max-width:650px}
+    .btn{display:inline-block;margin-top:12px;padding:12px 19px;border-radius:10px;background:var(--green);color:#fff;text-decoration:none;font-weight:750}
+    .hero-art{min-height:270px;border-radius:28px;background:var(--green);display:grid;place-items:center;color:white;position:relative;overflow:hidden}
+    .hero-art .sun{position:absolute;width:130px;height:130px;border-radius:50%;background:#d5e88b;right:32px;top:28px}
+    .hero-art .hill{position:absolute;width:125%;height:190px;border-radius:50% 50% 0 0;background:#2c8a62;bottom:-82px;left:-10%}
+    .hero-art .hill2{position:absolute;width:115%;height:150px;border-radius:50% 50% 0 0;background:#0e4b37;bottom:-90px;right:-30%}
+    .leaf{position:relative;z-index:2;font-size:5rem;filter:drop-shadow(0 5px 8px #0b3a2b55)}
+    section{padding:58px 0} .section-head{max-width:680px;margin-bottom:26px}
+    h2{font-size:clamp(1.7rem,3vw,2.5rem);line-height:1.2;letter-spacing:-.035em;margin:0 0 10px}
+    .muted{color:var(--muted)} .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:23px;box-shadow:0 7px 24px #163d2710}
+    .icon{font-size:2rem;width:58px;height:58px;border-radius:15px;background:var(--mint);display:grid;place-items:center;margin-bottom:15px}
+    .tag{font-size:.78rem;text-transform:uppercase;letter-spacing:.07em;font-weight:850;color:var(--green)}
+    .card h3{font-size:1.22rem;line-height:1.3;margin:7px 0}
+    .card p{color:var(--muted);margin-bottom:15px}
+    details{border-top:1px solid var(--line);padding-top:12px}
+    summary{cursor:pointer;color:var(--green);font-weight:800}
+    .article-body{padding:8px 0 2px}
+    .article-body h4{margin-bottom:3px}
+    .callout{background:var(--mint);border-left:5px solid var(--green);padding:20px 22px;border-radius:0 14px 14px 0}
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+    .step{background:#fff;border:1px solid var(--line);padding:18px;border-radius:14px}
+    .num{font-weight:900;font-size:1.5rem;color:var(--green)}
+    .about{background:#103e31;color:#f3fff6}.about .muted{color:#c5d9cd}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:start}
+    footer{background:#092b21;color:#d4e6dc;padding:22px 0;font-size:.9rem}
+    footer .wrap{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    @media(max-width:800px){.hero-grid,.about-grid{grid-template-columns:1fr}.hero-art{min-height:220px}.cards{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}}
+    @media(max-width:520px){.nav{align-items:flex-start;flex-direction:column}nav{gap:12px}.hero{padding:48px 0}.cards,.steps{grid-template-columns:1fr}section{padding:42px 0}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#beranda">🌿 Jejak <span>Hijau</span></a>
+    <nav aria-label="Navigasi utama">
+      <a href="#artikel">Artikel</a><a href="#aksi">Aksi Sederhana</a><a href="#tentang">Tentang</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="hero" id="beranda">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Environmental Campaign</span>
+        <h1>Perubahan besar dimulai dari kebiasaan kecil.</h1>
+        <p>Selamat datang di Jejak Hijau, blog edukasi lingkungan untuk memahami masalah di sekitar kita dan memulai aksi sederhana yang berdampak.</p>
+        <a class="btn" href="#artikel">Jelajahi Artikel ↓</a>
+      </div>
+      <div class="hero-art" role="img" aria-label="Ilustrasi daun dan bukit hijau">
+        <div class="sun"></div><div class="leaf">🌱</div><div class="hill"></div><div class="hill2"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="artikel">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Belajar bersama</span>
+        <h2>Artikel edukasi lingkungan</h2>
+        <p class="muted">Informasi praktis untuk membantu kita mengambil keputusan yang lebih ramah lingkungan dalam kehidupan sehari-hari.</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <div class="icon">♻️</div><div class="tag">Pengelolaan sampah</div>
+          <h3>Mulai Pilah Sampah dari Rumah</h3>
+          <p>Kenali perbedaan sampah organik, anorganik yang dapat didaur ulang, dan residu.</p>
+          <details><summary>Baca artikel</summary><div class="article-body">
+            <p>Sampah yang tercampur lebih sulit dimanfaatkan kembali. Memilah sampah sejak awal membantu menjaga bahan daur ulang tetap bersih dan mengurangi jumlah sampah yang berakhir di tempat pemrosesan akhir.</p>
+            <h4>Langkah sederhana</h4><ol><li>Sediakan wadah terpisah untuk sisa makanan, bahan daur ulang, dan residu.</li><li>Bilas kemasan yang kotor bila memungkinkan, lalu keringkan.</li><li>Kurangi barang sekali pakai sebelum berfokus pada daur ulang.</li><li>Periksa aturan bank sampah atau fasilitas pengumpulan di daerahmu.</li></ol>
+            <p><strong>Catatan:</strong> tidak semua plastik dapat didaur ulang di setiap daerah. Ikuti ketentuan fasilitas setempat.</p>
+          </div></details>
+        </article>
+        <article class="card">
+          <div class="icon">💧</div><div class="tag">Konservasi air</div>
+          <h3>Air Bersih Bukan Sumber Tanpa Batas</h3>
+          <p>Kebiasaan kecil untuk menggunakan air dengan lebih bijak dan mencegah pencemaran.</p>
+          <details><summary>Baca artikel</summary><div class="article-body">
+            <p>Air berperan penting bagi kesehatan, ekosistem, pertanian, dan kegiatan industri. Menghemat air membantu mengurangi tekanan pada sumber air serta energi yang diperlukan untuk memompa dan mengolahnya.</p>
+            <h4>Apa yang bisa dilakukan?</h4><ul><li>Segera perbaiki keran atau pipa yang bocor.</li><li>Matikan keran saat menyabuni tangan atau menyikat gigi.</li><li>Gunakan air secukupnya saat mencuci.</li><li>Jangan membuang minyak, cat, obat, atau bahan kimia ke saluran air.</li></ul>
+            <p>Hemat air bukan berarti mengurangi kebutuhan kebersihan, melainkan menghindari penggunaan yang tidak perlu.</p>
+          </div></details>
+        </article>
+        <article class="card">
+          <div class="icon">⚡</div><div class="tag">Energi</div>
+          <h3>Hemat Energi, Kurangi Pemborosan</h3>
+          <p>Kenapa efisiensi energi penting dan bagaimana memulainya di rumah atau kampus.</p>
+          <details><summary>Baca artikel</summary><div class="article-body">
+            <p>Energi digunakan untuk penerangan, pendinginan ruangan, transportasi, dan proses produksi. Penggunaan energi yang efisien dapat menekan biaya sekaligus mengurangi kebutuhan pembangkitan energi.</p>
+            <h4>Mulai dari hal berikut</h4><ul><li>Matikan lampu dan perangkat ketika tidak digunakan.</li><li>Manfaatkan cahaya dan ventilasi alami bila memungkinkan.</li><li>Atur pendingin ruangan pada suhu yang nyaman dan wajar.</li><li>Pilih perangkat berlabel efisiensi energi saat perlu membeli yang baru.</li></ul>
+            <p>Sebagai mahasiswa Teknik Mesin, kita juga bisa mempelajari efisiensi pada motor listrik, pompa, sistem pendingin, dan mesin industri.</p>
+          </div></details>
+        </article>
+        <article class="card">
+          <div class="icon">🛍️</div><div class="tag">Konsumsi bijak</div>
+          <h3>Kurangi Plastik Sekali Pakai</h3>
+          <p>Belanja dan beraktivitas dengan lebih sadar agar sampah tidak bertambah tanpa perlu.</p>
+          <details><summary>Baca artikel</summary><div class="article-body">
+            <p>Plastik ringan dan praktis, tetapi barang sekali pakai dapat menjadi sampah setelah digunakan sebentar. Sampah yang bocor ke lingkungan bisa mencemari tanah dan perairan serta membahayakan satwa.</p>
+            <h4>Strategi 4R</h4><ul><li><strong>Refuse:</strong> tolak barang yang tidak diperlukan.</li><li><strong>Reduce:</strong> kurangi pembelian dan kemasan berlebihan.</li><li><strong>Reuse:</strong> gunakan kembali barang yang masih layak.</li><li><strong>Recycle:</strong> salurkan bahan yang diterima sistem daur ulang setempat.</li></ul>
+            <p>Bawa botol minum atau tas pakai ulang jika praktis, dan gunakan barang sampai masa pakainya berakhir.</p>
+          </div></details>
+        </article>
+        <article class="card">
+          <div class="icon">🌳</div><div class="tag">Ruang hijau</div>
+          <h3>Menjaga Pohon dan Ruang Terbuka Hijau</h3>
+          <p>Ruang hijau mendukung kenyamanan lingkungan, keanekaragaman hayati, dan resapan air.</p>
+          <details><summary>Baca artikel</summary><div class="article-body">
+            <p>Pohon memberi naungan, membantu menyerap karbon selama pertumbuhan, menyediakan habitat, dan dapat mengurangi limpasan air hujan. Manfaatnya bergantung pada jenis, lokasi, perawatan, dan kondisi lingkungan.</p>
+            <h4>Aksi yang masuk akal</h4><ul><li>Rawat tanaman yang sudah ada, bukan hanya menanam pohon baru.</li><li>Pilih tanaman yang sesuai dengan kondisi lokal.</li><li>Jaga area resapan dan jangan menutup seluruh tanah dengan permukaan kedap air.</li><li>Ikut kegiatan bersih lingkungan yang aman dan terkoordinasi.</li></ul>
+          </div></details>
+        </article>
+        <article class="card">
+          <div class="icon">🚲</div><div class="tag">Mobilitas</div>
+          <h3>Pilih Perjalanan yang Lebih Ramah Lingkungan</h3>
+          <p>Perencanaan perjalanan dapat membantu mengurangi konsumsi bahan bakar dan emisi.</p>
+          <details><summary>Baca artikel</summary><div class="article-body">
+            <p>Emisi transportasi dipengaruhi oleh jenis kendaraan, bahan bakar, jarak, kondisi lalu lintas, dan jumlah penumpang. Tidak ada satu pilihan yang cocok untuk semua orang, sehingga keselamatan dan aksesibilitas tetap utama.</p>
+            <h4>Coba jika memungkinkan</h4><ul><li>Gabungkan beberapa keperluan dalam satu perjalanan.</li><li>Berjalan kaki atau bersepeda untuk jarak dekat jika aman.</li><li>Gunakan transportasi umum atau berbagi kendaraan bila tersedia.</li><li>Rawat kendaraan agar beroperasi sesuai kondisi yang baik.</li></ul>
+          </div></details>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="aksi" style="background:#f0f5ee">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Mulai hari ini</span>
+        <h2>Tantangan 7 hari lebih peduli lingkungan</h2>
+        <p class="muted">Tidak harus sempurna. Pilih aksi yang realistis, lakukan secara konsisten, lalu ajak orang lain.</p>
+      </div>
+      <div class="steps">
+        <div class="step"><div class="num">01</div><strong>Hari 1</strong><br>Amati jenis sampah yang paling sering kamu hasilkan.</div>
+        <div class="step"><div class="num">02</div><strong>Hari 2</strong><br>Bawa botol minum atau wadah pakai ulang.</div>
+        <div class="step"><div class="num">03</div><strong>Hari 3</strong><br>Periksa keran dan hindari pemborosan air.</div>
+        <div class="step"><div class="num">04</div><strong>Hari 4</strong><br>Matikan perangkat listrik yang tidak digunakan.</div>
+        <div class="step"><div class="num">05</div><strong>Hari 5</strong><br>Pilah sampah sesuai fasilitas di sekitarmu.</div>
+        <div class="step"><div class="num">06</div><strong>Hari 6</strong><br>Pilih perjalanan yang lebih efisien bila aman.</div>
+        <div class="step"><div class="num">07</div><strong>Hari 7</strong><br>Bagikan satu hal yang kamu pelajari kepada teman.</div>
+        <div class="step"><div class="num">+</div><strong>Lanjutkan</strong><br>Pilih kebiasaan yang paling mudah dipertahankan.</div>
+      </div>
+      <div class="callout" style="margin-top:24px"><strong>Pesan kampanye:</strong> Bumi tidak membutuhkan satu orang yang melakukan semuanya dengan sempurna. Kita membutuhkan lebih banyak orang yang melakukan perubahan kecil secara berkelanjutan.</div>
+    </div>
+  </section>
+
+  <section class="about" id="tentang">
+    <div class="wrap about-grid">
+      <div><span class="eyebrow">Tentang blog</span><h2>Pengetahuan lingkungan yang dekat dengan kehidupan sehari-hari.</h2>
+        <p class="muted">Jejak Hijau dibuat sebagai kampanye edukasi lingkungan untuk mengajak pembaca mengenali masalah, memahami pilihan, dan melakukan aksi sederhana secara bertanggung jawab.</p>
+      </div>
+      <div><h3>Tentang penulis</h3>
+        <p>Saya <strong>Nawal Andara Firanti</strong>, mahasiswa Teknik Mesin. Melalui Jejak Hijau, saya ingin berbagi edukasi lingkungan yang mudah dipahami dan menunjukkan bahwa ilmu teknik—termasuk efisiensi energi, penggunaan sumber daya, dan pengelolaan proses—dapat berkaitan dengan upaya menjaga lingkungan.</p>
+        <p class="muted">Konten ini bersifat edukatif. Untuk pengelolaan sampah atau limbah khusus, ikuti petunjuk instansi dan fasilitas resmi di daerah masing-masing.</p>
+      </div>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap"><span>© 2026 Jejak Hijau — Nawal Andara Firanti</span><span>Belajar • Peduli • Bertindak</span></div></footer>
+</body>
+</html>
